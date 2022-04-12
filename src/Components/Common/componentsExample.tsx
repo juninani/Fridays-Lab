@@ -1,6 +1,5 @@
 import React from 'react';
-import "./componentsExample.scss"
-const index = () => {
+const ComponentsExample = () => {
     return (
         <div >
             <header>
@@ -10,4 +9,4 @@ const index = () => {
     );
 };
 
-export default index;
+export default ComponentsExample;

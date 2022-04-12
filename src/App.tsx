@@ -1,5 +1,18 @@
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, BrowserRouter as Router, Route } from "react-router-dom";
 import React from 'react';
-export default function App() {
-  return <div>React + TypeScript + Webpack!</div>;
+import RoutesWrapper from "Components/Routers/Routes"
+let router:any = null
+
+function App() {
+
+  return (
+  <Router>
+    <BrowserRouter>
+      <div>
+        <Route path = "/" element = {RoutesWrapper}/>
+      </div>
+    </BrowserRouter>
+  </Router>
+  )
 }
+export default App;
