@@ -5,10 +5,10 @@ import pages from './Pages';
 const Routes = () => {
     return (
         <>
-            <Route path="/" element ={RoutesString.Main}/>
-            {/* {pages.map((item) =>{
+            <Route path="/"/>
+            {pages.map((item) =>{
                 return <Route path={`${item.path}/*`} element={item.element}/>
-            })} */}
+            })}
         </>
     );
 };
