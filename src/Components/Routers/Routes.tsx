@@ -1,16 +1,15 @@
 import React from 'react';
-import { Route } from 'react-router';
-import { RoutesString } from 'Components/Modules/RoutesString';
+import { Route, Routes } from 'react-router-dom';
 import pages from './Pages';
-const Routes = () => {
+
+const RoutesWrapper = () => {
     return (
-        <>
-            <Route path="/"/>
-            {pages.map((item) =>{
-                return <Route path={`${item.path}/*`} element={item.element}/>
+        <Routes>
+            {pages.map((item) => {
+                return <Route path={`${item.path}`} element={<item.element />} />;
             })}
-        </>
+        </Routes>
     );
 };
 
-export default Routes;
+export default RoutesWrapper;

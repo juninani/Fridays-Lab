@@ -1,10 +1,10 @@
-import { RoutesString } from "Components/Modules/RoutesString";
-import CompExam from "Components/Common/componentsExample"
+import { RoutesString } from 'Components/Modules/RoutesString';
+import CompExam from 'Components/Common/componentsExample';
 
 const pages = [
     {
-        path : RoutesString.CompExam,
-        element:CompExam,
-    }
-]
+        path: RoutesString.Main,
+        element: CompExam,
+    },
+];
 export default pages;

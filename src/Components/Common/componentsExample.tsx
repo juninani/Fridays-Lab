@@ -1,7 +1,7 @@
 import React from 'react';
 const ComponentsExample = () => {
     return (
-        <div >
+        <div>
             <header>
                 <h1>ComponentsExam</h1>
             </header>

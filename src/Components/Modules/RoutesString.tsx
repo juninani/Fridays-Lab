@@ -1,4 +1,4 @@
 export const RoutesString = {
-    Main:"/",
-    CompExam:"/CompExam",
-}
+    Main: '/',
+    CompExam: '/CompExam',
+};
