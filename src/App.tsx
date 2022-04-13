@@ -1,5 +1,12 @@
-import { BrowserRouter, Route } from 'react-router-dom';
+// import { Router, Route } from 'react-router-dom';
 import React from 'react';
-export default function App() {
-    return <div>React + TypeScript + Webpack!</div>;
+import RoutesWrapper from 'Components/Routers/Routes';
+
+function App() {
+    return (
+        <div>
+            <RoutesWrapper />
+        </div>
+    );
 }
+export default App;

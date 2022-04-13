@@ -1,8 +1,7 @@
 import React from 'react';
-import "./componentsExample.scss"
-const index = () => {
+const ComponentsExample = () => {
     return (
-        <div >
+        <div>
             <header>
                 <h1>ComponentsExam</h1>
             </header>
@@ -10,4 +9,4 @@ const index = () => {
     );
 };
 
-export default index;
+export default ComponentsExample;
