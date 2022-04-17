@@ -31,8 +31,15 @@ module.exports = {
         rules: [
             {
                 test: /\.(ts|tsx)$/,
-                use: 'ts-loader',
                 exclude: /node_modules/,
+                use: [
+                    {
+                        loader: 'ts-loader',
+                    },
+                    {
+                        loader: 'babel-loader',
+                    },
+                ],
             },
             {
                 test: /\.(png|jpe?g|gif)$/i,

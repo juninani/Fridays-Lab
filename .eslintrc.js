@@ -2,7 +2,7 @@
 module.exports = {
 	parser: "@babel/eslint-parser",
 	extends: ["naver", "plugin:prettier/recommended"],
-	env: { browser: true, node: true },
+	env: {browser: true, node: true},
 	plugins: ["eslint-plugin-prettier"],
 	parserOptions: {
 		ecmaVersion: 11,
@@ -10,9 +10,10 @@ module.exports = {
 	},
 	rules: {
 		"prettier/prettier": ["error"],
-		// "indent": ["error", 4],
-		// "prettier/prettier": ["error", { "tabWidth": 4 }]
+		
 	},
+
+	ignorePatterns: ["/src/stories/**/*"], 
 };
 
 // module.exports = {
