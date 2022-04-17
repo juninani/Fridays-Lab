@@ -2,8 +2,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+
 const mode = process.env.NODE_ENV || 'development';
 const tsConfigPath = path.resolve(__dirname, './tsconfig.json');
+
 module.exports = {
     mode,
     entry: {
