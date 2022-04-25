@@ -18,6 +18,9 @@ module.exports = {
     resolve: {
         plugins: [new TsconfigPathsPlugin({ configFile: tsConfigPath })],
         extensions: ['.ts', '.tsx', '.js'],
+        alias: {
+			'@src': path.resolve(__dirname, 'src')
+		},
     },
     devServer: {
         static: {
@@ -42,7 +45,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(png|jpe?g|gif)$/i,
+                test: /\.(png|mov|mp4|jpe?g|gif)$/i,
                 use: [
                     {
                         loader: 'file-loader',
@@ -50,12 +53,12 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(scss|sass)$/,
+                test: /.(sass|scss)$/,
                 use: [
-                    {
-                        loader: 'sass-loader',
-                    },
-                ],
+                { loader: 'style-loader' },
+                { loader: 'css-loader' },
+                { loader: 'sass-loader' },
+                ]
             },
         ],
     },

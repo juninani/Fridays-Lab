@@ -16,7 +16,8 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "baseUrl": "src",
-        "rootDir": "src"
+        "rootDir": "src",
+        "typeRoots": ["src/types"],
     },
     "include": ["src"]
 }
